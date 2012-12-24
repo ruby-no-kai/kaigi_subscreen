@@ -2,9 +2,9 @@
 %html
   %head
     %title
-      = ["KaigiSubscreen", @title].compact.join(" - ")
+      = [@title, "KaigiSubscreen"].compact.join(" - ")
     = stylesheet_link_tag    "application"
-    = javascript_include_tag "pusher.min", "application"
+    = javascript_include_tag "application"
     :javascript
       var channels = [];
     = csrf_meta_tags

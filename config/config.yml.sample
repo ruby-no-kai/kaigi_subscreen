@@ -3,17 +3,25 @@ pusher:
   key:    key
   secret: secret
 twitter:
-  auth1:
-    username: username
-    password: password
-  auth2:
-    username: username
-    password: password
+  oauth:
+    consumer_key: your_consumer_key
+    consumer_secret: your_consumer_secret
+    access_key: your_access_key
+    access_secret: your_access_secret
   ignore:
     - screen_name_1
     - screen_name_2
 irc:
+  server: irc.rubykaigi.org
+  port: 6667
   nick: nick
   user: user
   real: real
   pass: pass
+  channels:
+    - rubykaigi
+    - kaigi1
+    - kaigi2
+    - kaigi1-m17n
+    - kaigi2-m17n
+    - rubykaigi-staff
